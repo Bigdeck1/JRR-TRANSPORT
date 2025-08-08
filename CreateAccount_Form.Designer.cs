@@ -1,0 +1,132 @@
+﻿namespace Jrr_Transport_Management_System
+{
+    partial class CreateAccount_Form
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAccount_Form));
+            acc_Create = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            user_name = new TextBox();
+            pass_word = new TextBox();
+            login_Btn = new Button();
+            SuspendLayout();
+            // 
+            // acc_Create
+            // 
+            acc_Create.AutoSize = true;
+            acc_Create.ForeColor = Color.IndianRed;
+            acc_Create.Location = new Point(865, 538);
+            acc_Create.Name = "acc_Create";
+            acc_Create.Size = new Size(110, 20);
+            acc_Create.TabIndex = 16;
+            acc_Create.Text = "Create Account";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(659, 459);
+            label2.Name = "label2";
+            label2.Size = new Size(77, 20);
+            label2.TabIndex = 15;
+            label2.Text = "Password: ";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(654, 429);
+            label1.Name = "label1";
+            label1.Size = new Size(82, 20);
+            label1.TabIndex = 14;
+            label1.Text = "Username: ";
+            // 
+            // user_name
+            // 
+            user_name.Location = new Point(742, 426);
+            user_name.Name = "user_name";
+            user_name.Size = new Size(354, 27);
+            user_name.TabIndex = 13;
+            // 
+            // pass_word
+            // 
+            pass_word.Location = new Point(742, 459);
+            pass_word.Name = "pass_word";
+            pass_word.Size = new Size(354, 27);
+            pass_word.TabIndex = 12;
+            // 
+            // login_Btn
+            // 
+            login_Btn.BackColor = Color.DeepSkyBlue;
+            login_Btn.BackgroundImageLayout = ImageLayout.Center;
+            login_Btn.FlatStyle = FlatStyle.Flat;
+            login_Btn.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            login_Btn.ForeColor = SystemColors.ButtonFace;
+            login_Btn.Location = new Point(848, 492);
+            login_Btn.Name = "login_Btn";
+            login_Btn.Size = new Size(142, 43);
+            login_Btn.TabIndex = 11;
+            login_Btn.Text = "Login";
+            login_Btn.UseVisualStyleBackColor = false;
+            // 
+            // CreateAccount_Form
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
+            BackgroundImage = Properties.Resources.d879b042_9903_4ae7_b02b_cd5c3f2a037a_removebg_preview;
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(1296, 559);
+            Controls.Add(acc_Create);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(user_name);
+            Controls.Add(pass_word);
+            Controls.Add(login_Btn);
+            DoubleBuffered = true;
+            ForeColor = SystemColors.ActiveBorder;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "CreateAccount_Form";
+            Text = "JRR TRANSPORT SERVICE";
+            Load += CreateAccount_Form_Load;
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label acc_Create;
+        private Label label2;
+        private Label label1;
+        private TextBox user_name;
+        private TextBox pass_word;
+        private Button login_Btn;
+    }
+}
