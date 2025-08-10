@@ -33,6 +33,10 @@
             panel3 = new Panel();
             panel4 = new Panel();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,6 +51,10 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(0, 52, 61);
+            panel2.Controls.Add(button5);
+            panel2.Controls.Add(button4);
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button2);
             panel2.Controls.Add(button1);
             panel2.Location = new Point(12, 105);
             panel2.Name = "panel2";
@@ -71,12 +79,54 @@
             // 
             // button1
             // 
-            button1.Location = new Point(86, 18);
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(80, 13);
             button1.Name = "button1";
-            button1.Size = new Size(84, 37);
+            button1.Size = new Size(91, 47);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "HOME";
             button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            button2.Location = new Point(80, 76);
+            button2.Name = "button2";
+            button2.Size = new Size(91, 47);
+            button2.TabIndex = 1;
+            button2.Text = "USER";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            button3.Location = new Point(80, 142);
+            button3.Name = "button3";
+            button3.Size = new Size(91, 47);
+            button3.TabIndex = 2;
+            button3.Text = "PAYROLL";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            button4.Location = new Point(80, 206);
+            button4.Name = "button4";
+            button4.Size = new Size(91, 47);
+            button4.TabIndex = 3;
+            button4.Text = "REPORTS";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            button5.Location = new Point(80, 271);
+            button5.Name = "button5";
+            button5.Size = new Size(91, 47);
+            button5.TabIndex = 4;
+            button5.Text = "SETTING";
+            button5.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -100,5 +150,9 @@
         private Panel panel3;
         private Panel panel4;
         private Button button1;
+        private Button button5;
+        private Button button4;
+        private Button button3;
+        private Button button2;
     }
 }
