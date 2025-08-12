@@ -31,5 +31,25 @@ namespace Jrr_Transport_Management_System
         {
 
         }
+
+        private void vichicleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
