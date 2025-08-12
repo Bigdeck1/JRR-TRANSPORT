@@ -28,37 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            menuStrip1 = new MenuStrip();
+            dashboardToolStripMenuItem = new ToolStripMenuItem();
+            employeeListToolStripMenuItem = new ToolStripMenuItem();
+            payrollToolStripMenuItem = new ToolStripMenuItem();
+            vichicleToolStripMenuItem = new ToolStripMenuItem();
+            dashboardToolStripMenuItem1 = new ToolStripMenuItem();
+            reportsToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // menuStrip1
             // 
-            button1.Location = new Point(427, 246);
-            button1.Name = "button1";
-            button1.Size = new Size(118, 31);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            menuStrip1.BackColor = SystemColors.ButtonFace;
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1352, 28);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
-            // dashboard
+            // dashboardToolStripMenuItem
+            // 
+            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { employeeListToolStripMenuItem, payrollToolStripMenuItem, vichicleToolStripMenuItem, dashboardToolStripMenuItem1, reportsToolStripMenuItem });
+            dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
+            dashboardToolStripMenuItem.Size = new Size(60, 24);
+            dashboardToolStripMenuItem.Text = "Menu";
+            // 
+            // employeeListToolStripMenuItem
+            // 
+            employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
+            employeeListToolStripMenuItem.Size = new Size(184, 26);
+            employeeListToolStripMenuItem.Text = "Employee List";
+            // 
+            // payrollToolStripMenuItem
+            // 
+            payrollToolStripMenuItem.Name = "payrollToolStripMenuItem";
+            payrollToolStripMenuItem.Size = new Size(184, 26);
+            payrollToolStripMenuItem.Text = "Payroll";
+            payrollToolStripMenuItem.Click += payrollToolStripMenuItem_Click;
+            // 
+            // vichicleToolStripMenuItem
+            // 
+            vichicleToolStripMenuItem.Name = "vichicleToolStripMenuItem";
+            vichicleToolStripMenuItem.Size = new Size(184, 26);
+            vichicleToolStripMenuItem.Text = "Vehicle";
+            // 
+            // dashboardToolStripMenuItem1
+            // 
+            dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
+            dashboardToolStripMenuItem1.Size = new Size(184, 26);
+            dashboardToolStripMenuItem1.Text = "Dashboard";
+            // 
+            // reportsToolStripMenuItem
+            // 
+            reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            reportsToolStripMenuItem.Size = new Size(184, 26);
+            reportsToolStripMenuItem.Text = "Reports";
+            // 
+            // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.d879b042_9903_4ae7_b02b_cd5c3f2a037a_removebg_preview;
-            BackgroundImageLayout = ImageLayout.Center;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1352, 531);
-            Controls.Add(button1);
+            Controls.Add(menuStrip1);
+            Cursor = Cursors.Hand;
             DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            MainMenuStrip = menuStrip1;
             Name = "Dashboard";
+            RightToLeftLayout = true;
             Text = "Dashboard";
             WindowState = FormWindowState.Maximized;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem dashboardToolStripMenuItem;
+        private ToolStripMenuItem employeeListToolStripMenuItem;
+        private ToolStripMenuItem payrollToolStripMenuItem;
+        private ToolStripMenuItem vichicleToolStripMenuItem;
+        private ToolStripMenuItem dashboardToolStripMenuItem1;
+        private ToolStripMenuItem reportsToolStripMenuItem;
     }
 }
