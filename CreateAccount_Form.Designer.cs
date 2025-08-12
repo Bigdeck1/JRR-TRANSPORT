@@ -118,12 +118,7 @@ namespace Jrr_Transport_Management_System
 
         private void L_acc_link_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            this.Close(); 
         }
     }
 }

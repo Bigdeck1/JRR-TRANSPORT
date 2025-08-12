@@ -22,23 +22,26 @@
             C_pass_word = new TextBox();
             C_acc_btn = new Button();
             L_acc_link = new LinkLabel();
+            label4 = new Label();
             SuspendLayout();
             // 
             // C_username
             // 
             resources.ApplyResources(C_username, "C_username");
+            C_username.BackColor = Color.Transparent;
             C_username.Name = "C_username";
             // 
             // C_password
             // 
             resources.ApplyResources(C_password, "C_password");
+            C_password.BackColor = Color.Transparent;
             C_password.Name = "C_password";
             // 
             // label3
             // 
             resources.ApplyResources(label3, "label3");
+            label3.BackColor = Color.Transparent;
             label3.Name = "label3";
-          
             // 
             // C_user_name
             // 
@@ -61,15 +64,24 @@
             // L_acc_link
             // 
             resources.ApplyResources(L_acc_link, "L_acc_link");
+            L_acc_link.BackColor = Color.Transparent;
             L_acc_link.LinkColor = Color.Red;
             L_acc_link.Name = "L_acc_link";
             L_acc_link.TabStop = true;
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.BackColor = Color.Transparent;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.Name = "label4";
             // 
             // CreateAccount_Form
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
+            Controls.Add(label4);
             Controls.Add(L_acc_link);
             Controls.Add(C_acc_btn);
             Controls.Add(C_pass_word);
@@ -79,9 +91,8 @@
             Controls.Add(C_username);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveCaptionText;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "CreateAccount_Form";
-            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -95,5 +106,6 @@
         private TextBox C_pass_word;
         private Button C_acc_btn;
         private LinkLabel L_acc_link;
+        private Label label4;
     }
 }
