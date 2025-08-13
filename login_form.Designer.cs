@@ -42,8 +42,8 @@ namespace Jrr_Transport_Management_System
             // 
             // login_Btn
             // 
-            login_Btn.BackColor = Color.DeepSkyBlue;
             resources.ApplyResources(login_Btn, "login_Btn");
+            login_Btn.BackColor = Color.DeepSkyBlue;
             login_Btn.ForeColor = SystemColors.ButtonFace;
             login_Btn.Name = "login_Btn";
             login_Btn.UseVisualStyleBackColor = false;
@@ -109,7 +109,6 @@ namespace Jrr_Transport_Management_System
             Controls.Add(login_Btn);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveBorder;
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "login_Form";
             WindowState = FormWindowState.Minimized;
             ResumeLayout(false);

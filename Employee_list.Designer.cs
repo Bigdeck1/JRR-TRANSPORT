@@ -1,6 +1,6 @@
 ﻿namespace Jrr_Transport_Management_System
 {
-    partial class Dashboard
+    partial class Employee_list
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee_list));
             menuStrip1 = new MenuStrip();
             dashboardToolStripMenuItem = new ToolStripMenuItem();
             dashboardToolStripMenuItem1 = new ToolStripMenuItem();
-            employeeListToolStripMenuItem = new ToolStripMenuItem();
             attendanceToolStripMenuItem = new ToolStripMenuItem();
             payrollToolStripMenuItem = new ToolStripMenuItem();
             payrollToolStripMenuItem1 = new ToolStripMenuItem();
@@ -85,47 +84,37 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1352, 28);
+            menuStrip1.Size = new Size(1144, 28);
             menuStrip1.Stretch = false;
-            menuStrip1.TabIndex = 0;
+            menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // dashboardToolStripMenuItem
             // 
             dashboardToolStripMenuItem.AutoToolTip = true;
-            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem1, employeeListToolStripMenuItem, attendanceToolStripMenuItem, payrollToolStripMenuItem, bookingToolStripMenuItem, vichicleToolStripMenuItem, reportsToolStripMenuItem, logoutToolStripMenuItem });
+            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem1, attendanceToolStripMenuItem, payrollToolStripMenuItem, bookingToolStripMenuItem, vichicleToolStripMenuItem, reportsToolStripMenuItem, logoutToolStripMenuItem });
             dashboardToolStripMenuItem.Image = (Image)resources.GetObject("dashboardToolStripMenuItem.Image");
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
             dashboardToolStripMenuItem.Size = new Size(34, 24);
-            dashboardToolStripMenuItem.Click += dashboardToolStripMenuItem_Click;
             // 
             // dashboardToolStripMenuItem1
             // 
             dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
-            dashboardToolStripMenuItem1.Size = new Size(184, 26);
+            dashboardToolStripMenuItem1.Size = new Size(224, 26);
             dashboardToolStripMenuItem1.Text = "Dashboard";
-            // 
-            // employeeListToolStripMenuItem
-            // 
-            employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
-            employeeListToolStripMenuItem.Size = new Size(184, 26);
-            employeeListToolStripMenuItem.Text = "Employee List";
-            employeeListToolStripMenuItem.Click += employeeListToolStripMenuItem_Click;
             // 
             // attendanceToolStripMenuItem
             // 
             attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
-            attendanceToolStripMenuItem.Size = new Size(184, 26);
+            attendanceToolStripMenuItem.Size = new Size(224, 26);
             attendanceToolStripMenuItem.Text = "Attendance";
             // 
             // payrollToolStripMenuItem
             // 
             payrollToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollToolStripMenuItem1, payslipGeneratorToolStripMenuItem });
             payrollToolStripMenuItem.Name = "payrollToolStripMenuItem";
-            payrollToolStripMenuItem.Size = new Size(184, 26);
+            payrollToolStripMenuItem.Size = new Size(224, 26);
             payrollToolStripMenuItem.Text = "Salary";
-            payrollToolStripMenuItem.Click += payrollToolStripMenuItem_Click;
             // 
             // payrollToolStripMenuItem1
             // 
@@ -142,21 +131,20 @@
             // bookingToolStripMenuItem
             // 
             bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            bookingToolStripMenuItem.Size = new Size(184, 26);
+            bookingToolStripMenuItem.Size = new Size(224, 26);
             bookingToolStripMenuItem.Text = "Booking";
             // 
             // vichicleToolStripMenuItem
             // 
             vichicleToolStripMenuItem.Name = "vichicleToolStripMenuItem";
-            vichicleToolStripMenuItem.Size = new Size(184, 26);
+            vichicleToolStripMenuItem.Size = new Size(224, 26);
             vichicleToolStripMenuItem.Text = "Available";
-            vichicleToolStripMenuItem.Click += vichicleToolStripMenuItem_Click;
             // 
             // reportsToolStripMenuItem
             // 
             reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollSummariesToolStripMenuItem, monthlyIncomeToolStripMenuItem, employeeAttendanceToolStripMenuItem, driverVehicleLogsToolStripMenuItem, printableReportsToolStripMenuItem });
             reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            reportsToolStripMenuItem.Size = new Size(184, 26);
+            reportsToolStripMenuItem.Size = new Size(224, 26);
             reportsToolStripMenuItem.Text = "Reports";
             // 
             // payrollSummariesToolStripMenuItem
@@ -192,7 +180,7 @@
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(184, 26);
+            logoutToolStripMenuItem.Size = new Size(224, 26);
             logoutToolStripMenuItem.Text = "Logout";
             // 
             // fileToolStripMenuItem
@@ -392,23 +380,18 @@
             aboutToolStripMenuItem.Size = new Size(150, 26);
             aboutToolStripMenuItem.Text = "&About...";
             // 
-            // Dashboard
+            // Employee_list
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1352, 531);
+            ClientSize = new Size(1144, 522);
             Controls.Add(menuStrip1);
-            Cursor = Cursors.Hand;
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MainMenuStrip = menuStrip1;
-            Name = "Dashboard";
-            RightToLeftLayout = true;
-            Text = "Dashboard";
-            WindowState = FormWindowState.Minimized;
-            Load += Dashboard_Load;
+            Name = "Employee_list";
+            Text = "Employee List";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -419,21 +402,20 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem dashboardToolStripMenuItem;
-        private ToolStripMenuItem employeeListToolStripMenuItem;
-        private ToolStripMenuItem payrollToolStripMenuItem;
-        private ToolStripMenuItem vichicleToolStripMenuItem;
         private ToolStripMenuItem dashboardToolStripMenuItem1;
-        private ToolStripMenuItem reportsToolStripMenuItem;
         private ToolStripMenuItem attendanceToolStripMenuItem;
+        private ToolStripMenuItem payrollToolStripMenuItem;
         private ToolStripMenuItem payrollToolStripMenuItem1;
         private ToolStripMenuItem payslipGeneratorToolStripMenuItem;
-        private ToolStripMenuItem logoutToolStripMenuItem;
+        private ToolStripMenuItem bookingToolStripMenuItem;
+        private ToolStripMenuItem vichicleToolStripMenuItem;
+        private ToolStripMenuItem reportsToolStripMenuItem;
         private ToolStripMenuItem payrollSummariesToolStripMenuItem;
         private ToolStripMenuItem monthlyIncomeToolStripMenuItem;
         private ToolStripMenuItem employeeAttendanceToolStripMenuItem;
         private ToolStripMenuItem driverVehicleLogsToolStripMenuItem;
         private ToolStripMenuItem printableReportsToolStripMenuItem;
-        private ToolStripMenuItem bookingToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem newToolStripMenuItem;
         private ToolStripMenuItem openToolStripMenuItem;
