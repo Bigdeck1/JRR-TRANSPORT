@@ -55,8 +55,8 @@
             // 
             // C_acc_btn
             // 
-            C_acc_btn.BackColor = Color.DeepSkyBlue;
             resources.ApplyResources(C_acc_btn, "C_acc_btn");
+            C_acc_btn.BackColor = Color.DeepSkyBlue;
             C_acc_btn.ForeColor = SystemColors.ButtonFace;
             C_acc_btn.Name = "C_acc_btn";
             C_acc_btn.UseVisualStyleBackColor = false;
@@ -91,7 +91,6 @@
             Controls.Add(C_username);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveCaptionText;
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "CreateAccount_Form";
             ResumeLayout(false);
             PerformLayout();
