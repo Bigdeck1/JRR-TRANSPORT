@@ -406,8 +406,9 @@
             MainMenuStrip = menuStrip1;
             Name = "Dashboard";
             RightToLeftLayout = true;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Maximized;
             Load += Dashboard_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

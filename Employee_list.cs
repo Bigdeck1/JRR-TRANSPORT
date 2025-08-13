@@ -16,5 +16,10 @@ namespace Jrr_Transport_Management_System
         {
             InitializeComponent();
         }
+
+        private void Employee_list_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
