@@ -39,12 +39,13 @@ namespace Jrr_Transport_Management_System
 
         private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Employee_list empListForm = new Employee_list();
+            this.Hide();
+            empListForm.ShowDialog();
         }
-
         private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+ 
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

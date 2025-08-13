@@ -32,6 +32,7 @@
             menuStrip1 = new MenuStrip();
             dashboardToolStripMenuItem = new ToolStripMenuItem();
             dashboardToolStripMenuItem1 = new ToolStripMenuItem();
+            employeeListToolStripMenuItem = new ToolStripMenuItem();
             attendanceToolStripMenuItem = new ToolStripMenuItem();
             payrollToolStripMenuItem = new ToolStripMenuItem();
             payrollToolStripMenuItem1 = new ToolStripMenuItem();
@@ -74,7 +75,13 @@
             searchToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator5 = new ToolStripSeparator();
             aboutToolStripMenuItem = new ToolStripMenuItem();
+            panel1 = new Panel();
+            add_Employee = new Button();
+            label1 = new Label();
+            panel2 = new Panel();
             menuStrip1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -84,7 +91,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1144, 28);
+            menuStrip1.Size = new Size(1166, 28);
             menuStrip1.Stretch = false;
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
@@ -92,7 +99,7 @@
             // dashboardToolStripMenuItem
             // 
             dashboardToolStripMenuItem.AutoToolTip = true;
-            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem1, attendanceToolStripMenuItem, payrollToolStripMenuItem, bookingToolStripMenuItem, vichicleToolStripMenuItem, reportsToolStripMenuItem, logoutToolStripMenuItem });
+            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem1, employeeListToolStripMenuItem, attendanceToolStripMenuItem, payrollToolStripMenuItem, bookingToolStripMenuItem, vichicleToolStripMenuItem, reportsToolStripMenuItem, logoutToolStripMenuItem });
             dashboardToolStripMenuItem.Image = (Image)resources.GetObject("dashboardToolStripMenuItem.Image");
             dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
             dashboardToolStripMenuItem.Size = new Size(34, 24);
@@ -100,20 +107,26 @@
             // dashboardToolStripMenuItem1
             // 
             dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
-            dashboardToolStripMenuItem1.Size = new Size(224, 26);
+            dashboardToolStripMenuItem1.Size = new Size(184, 26);
             dashboardToolStripMenuItem1.Text = "Dashboard";
+            // 
+            // employeeListToolStripMenuItem
+            // 
+            employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
+            employeeListToolStripMenuItem.Size = new Size(184, 26);
+            employeeListToolStripMenuItem.Text = "Employee List";
             // 
             // attendanceToolStripMenuItem
             // 
             attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
-            attendanceToolStripMenuItem.Size = new Size(224, 26);
+            attendanceToolStripMenuItem.Size = new Size(184, 26);
             attendanceToolStripMenuItem.Text = "Attendance";
             // 
             // payrollToolStripMenuItem
             // 
             payrollToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollToolStripMenuItem1, payslipGeneratorToolStripMenuItem });
             payrollToolStripMenuItem.Name = "payrollToolStripMenuItem";
-            payrollToolStripMenuItem.Size = new Size(224, 26);
+            payrollToolStripMenuItem.Size = new Size(184, 26);
             payrollToolStripMenuItem.Text = "Salary";
             // 
             // payrollToolStripMenuItem1
@@ -131,20 +144,20 @@
             // bookingToolStripMenuItem
             // 
             bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            bookingToolStripMenuItem.Size = new Size(224, 26);
+            bookingToolStripMenuItem.Size = new Size(184, 26);
             bookingToolStripMenuItem.Text = "Booking";
             // 
             // vichicleToolStripMenuItem
             // 
             vichicleToolStripMenuItem.Name = "vichicleToolStripMenuItem";
-            vichicleToolStripMenuItem.Size = new Size(224, 26);
+            vichicleToolStripMenuItem.Size = new Size(184, 26);
             vichicleToolStripMenuItem.Text = "Available";
             // 
             // reportsToolStripMenuItem
             // 
             reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollSummariesToolStripMenuItem, monthlyIncomeToolStripMenuItem, employeeAttendanceToolStripMenuItem, driverVehicleLogsToolStripMenuItem, printableReportsToolStripMenuItem });
             reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            reportsToolStripMenuItem.Size = new Size(224, 26);
+            reportsToolStripMenuItem.Size = new Size(184, 26);
             reportsToolStripMenuItem.Text = "Reports";
             // 
             // payrollSummariesToolStripMenuItem
@@ -180,7 +193,7 @@
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(224, 26);
+            logoutToolStripMenuItem.Size = new Size(184, 26);
             logoutToolStripMenuItem.Text = "Logout";
             // 
             // fileToolStripMenuItem
@@ -380,20 +393,72 @@
             aboutToolStripMenuItem.Size = new Size(150, 26);
             aboutToolStripMenuItem.Text = "&About...";
             // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel1.BackColor = Color.ForestGreen;
+            panel1.Controls.Add(add_Employee);
+            panel1.Location = new Point(0, 29);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(408, 504);
+            panel1.TabIndex = 2;
+            // 
+            // add_Employee
+            // 
+            add_Employee.Anchor = AnchorStyles.Bottom;
+            add_Employee.Font = new Font("Segoe UI", 15F);
+            add_Employee.Location = new Point(268, 444);
+            add_Employee.Name = "add_Employee";
+            add_Employee.Size = new Size(137, 57);
+            add_Employee.TabIndex = 0;
+            add_Employee.Text = "Add";
+            add_Employee.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 40F);
+            label1.Location = new Point(264, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(493, 89);
+            label1.TabIndex = 3;
+            label1.Text = "EMPLOYEE LIST";
+            label1.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.BackColor = Color.SeaGreen;
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(406, 29);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(760, 103);
+            panel2.TabIndex = 4;
+            // 
             // Employee_list
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1144, 522);
+            ClientSize = new Size(1166, 533);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
-            Icon = (Icon)resources.GetObject("$this.Icon");
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Employee_list";
-            Text = "Employee List";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Employee_list";
+            WindowState = FormWindowState.Maximized;
+            Load += Employee_list_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -403,6 +468,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem dashboardToolStripMenuItem;
         private ToolStripMenuItem dashboardToolStripMenuItem1;
+        private ToolStripMenuItem employeeListToolStripMenuItem;
         private ToolStripMenuItem attendanceToolStripMenuItem;
         private ToolStripMenuItem payrollToolStripMenuItem;
         private ToolStripMenuItem payrollToolStripMenuItem1;
@@ -445,5 +511,9 @@
         private ToolStripMenuItem searchToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator5;
         private ToolStripMenuItem aboutToolStripMenuItem;
+        private Panel panel1;
+        private Label label1;
+        private Panel panel2;
+        private Button add_Employee;
     }
 }
