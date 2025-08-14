@@ -38,6 +38,7 @@ namespace Jrr_Transport_Management_System
             acc_Create = new Label();
             label3 = new Label();
             label4 = new Label();
+            xlink = new Label();
             SuspendLayout();
             // 
             // login_Btn
@@ -94,11 +95,19 @@ namespace Jrr_Transport_Management_System
             label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Name = "label4";
             // 
+            // xlink
+            // 
+            resources.ApplyResources(xlink, "xlink");
+            xlink.BackColor = Color.Transparent;
+            xlink.ForeColor = Color.Red;
+            xlink.Name = "xlink";
+            // 
             // login_Form
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.BlanchedAlmond;
+            Controls.Add(xlink);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(acc_Create);
@@ -109,6 +118,7 @@ namespace Jrr_Transport_Management_System
             Controls.Add(login_Btn);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveBorder;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "login_Form";
             WindowState = FormWindowState.Minimized;
             ResumeLayout(false);
@@ -125,5 +135,6 @@ namespace Jrr_Transport_Management_System
         private Label acc_Create;
         private Label label3;
         private Label label4;
+        private Label xlink;
     }
 }

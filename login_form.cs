@@ -17,6 +17,7 @@ namespace Jrr_Transport_Management_System
             EnsureDatabase();
             login_Btn.Click += login_Btn_Click;
             acc_Create.Click += acc_Create_Click;
+            xlink.Click += xlink_Click;
         }
 
         private void EnsureDatabase()
@@ -112,9 +113,9 @@ namespace Jrr_Transport_Management_System
             createForm.Show();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void xlink_Click(object? sender, EventArgs e)
         {
-
+            this.Close();
         }
-    }
+}
 }
