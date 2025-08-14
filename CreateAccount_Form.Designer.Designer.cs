@@ -23,6 +23,7 @@
             C_acc_btn = new Button();
             L_acc_link = new LinkLabel();
             label4 = new Label();
+            xlink = new Label();
             SuspendLayout();
             // 
             // C_username
@@ -76,11 +77,19 @@
             label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Name = "label4";
             // 
+            // xlink
+            // 
+            resources.ApplyResources(xlink, "xlink");
+            xlink.BackColor = Color.Transparent;
+            xlink.ForeColor = Color.Red;
+            xlink.Name = "xlink";
+            // 
             // CreateAccount_Form
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
+            Controls.Add(xlink);
             Controls.Add(label4);
             Controls.Add(L_acc_link);
             Controls.Add(C_acc_btn);
@@ -91,6 +100,7 @@
             Controls.Add(C_username);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveCaptionText;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "CreateAccount_Form";
             ResumeLayout(false);
             PerformLayout();
@@ -106,5 +116,6 @@
         private Button C_acc_btn;
         private LinkLabel L_acc_link;
         private Label label4;
+        private Label xlink;
     }
 }

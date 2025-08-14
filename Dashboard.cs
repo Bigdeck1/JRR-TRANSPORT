@@ -15,6 +15,9 @@ namespace Jrr_Transport_Management_System
         public Dashboard()
         {
             InitializeComponent();
+
+            emloyeeL.Click += emloyeeL_Click;
+            logoutL.Click += logoutL_Click;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,23 +35,44 @@ namespace Jrr_Transport_Management_System
 
         }
 
-        private void vichicleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void logoutL_Click(object? sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void emloyeeL_Click(object? sender, EventArgs e)
         {
             Employee_list empListForm = new Employee_list();
             this.Hide();
-            empListForm.ShowDialog();
+            empListForm.FormClosed += (s, args) => this.Show(); // when closed, return to dashboard
+            empListForm.Show();
         }
         private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
- 
+
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

@@ -29,368 +29,383 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            menuStrip1 = new MenuStrip();
-            dashboardToolStripMenuItem = new ToolStripMenuItem();
-            dashboardToolStripMenuItem1 = new ToolStripMenuItem();
-            employeeListToolStripMenuItem = new ToolStripMenuItem();
-            attendanceToolStripMenuItem = new ToolStripMenuItem();
-            payrollToolStripMenuItem = new ToolStripMenuItem();
-            payrollToolStripMenuItem1 = new ToolStripMenuItem();
-            payslipGeneratorToolStripMenuItem = new ToolStripMenuItem();
-            bookingToolStripMenuItem = new ToolStripMenuItem();
-            vichicleToolStripMenuItem = new ToolStripMenuItem();
-            reportsToolStripMenuItem = new ToolStripMenuItem();
-            payrollSummariesToolStripMenuItem = new ToolStripMenuItem();
-            monthlyIncomeToolStripMenuItem = new ToolStripMenuItem();
-            employeeAttendanceToolStripMenuItem = new ToolStripMenuItem();
-            driverVehicleLogsToolStripMenuItem = new ToolStripMenuItem();
-            printableReportsToolStripMenuItem = new ToolStripMenuItem();
-            logoutToolStripMenuItem = new ToolStripMenuItem();
-            fileToolStripMenuItem = new ToolStripMenuItem();
-            newToolStripMenuItem = new ToolStripMenuItem();
-            openToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator = new ToolStripSeparator();
-            saveToolStripMenuItem = new ToolStripMenuItem();
-            saveAsToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator1 = new ToolStripSeparator();
-            printToolStripMenuItem = new ToolStripMenuItem();
-            printPreviewToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator2 = new ToolStripSeparator();
-            exitToolStripMenuItem = new ToolStripMenuItem();
-            editToolStripMenuItem = new ToolStripMenuItem();
-            undoToolStripMenuItem = new ToolStripMenuItem();
-            redoToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator3 = new ToolStripSeparator();
-            cutToolStripMenuItem = new ToolStripMenuItem();
-            copyToolStripMenuItem = new ToolStripMenuItem();
-            pasteToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator4 = new ToolStripSeparator();
-            selectAllToolStripMenuItem = new ToolStripMenuItem();
-            toolsToolStripMenuItem = new ToolStripMenuItem();
-            customizeToolStripMenuItem = new ToolStripMenuItem();
-            optionsToolStripMenuItem = new ToolStripMenuItem();
-            helpToolStripMenuItem = new ToolStripMenuItem();
-            contentsToolStripMenuItem = new ToolStripMenuItem();
-            indexToolStripMenuItem = new ToolStripMenuItem();
-            searchToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator5 = new ToolStripSeparator();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            panel1 = new Panel();
+            pictureBox10 = new PictureBox();
+            panel10 = new Panel();
+            pictureBox9 = new PictureBox();
+            label9 = new Label();
+            panel9 = new Panel();
+            pictureBox8 = new PictureBox();
+            label8 = new Label();
+            panel8 = new Panel();
+            pictureBox7 = new PictureBox();
+            label7 = new Label();
+            panel7 = new Panel();
+            pictureBox2 = new PictureBox();
+            label3 = new Label();
+            panel6 = new Panel();
+            pictureBox3 = new PictureBox();
+            emloyeeL = new Label();
+            panel5 = new Panel();
+            pictureBox4 = new PictureBox();
+            label2 = new Label();
+            panel4 = new Panel();
+            pictureBox5 = new PictureBox();
+            label5 = new Label();
+            panel3 = new Panel();
+            pictureBox6 = new PictureBox();
+            label6 = new Label();
+            panel2 = new Panel();
+            logoutL = new Label();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // menuStrip1
-            // 
-            menuStrip1.BackColor = Color.Transparent;
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem, fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem, helpToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1352, 28);
-            menuStrip1.Stretch = false;
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
-            // 
-            // dashboardToolStripMenuItem
-            // 
-            dashboardToolStripMenuItem.AutoToolTip = true;
-            dashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dashboardToolStripMenuItem1, employeeListToolStripMenuItem, attendanceToolStripMenuItem, payrollToolStripMenuItem, bookingToolStripMenuItem, vichicleToolStripMenuItem, reportsToolStripMenuItem, logoutToolStripMenuItem });
-            dashboardToolStripMenuItem.Image = (Image)resources.GetObject("dashboardToolStripMenuItem.Image");
-            dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            dashboardToolStripMenuItem.Size = new Size(34, 24);
-            dashboardToolStripMenuItem.Click += dashboardToolStripMenuItem_Click;
-            // 
-            // dashboardToolStripMenuItem1
-            // 
-            dashboardToolStripMenuItem1.Name = "dashboardToolStripMenuItem1";
-            dashboardToolStripMenuItem1.Size = new Size(184, 26);
-            dashboardToolStripMenuItem1.Text = "Dashboard";
-            // 
-            // employeeListToolStripMenuItem
-            // 
-            employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
-            employeeListToolStripMenuItem.Size = new Size(184, 26);
-            employeeListToolStripMenuItem.Text = "Employee List";
-            employeeListToolStripMenuItem.Click += employeeListToolStripMenuItem_Click;
-            // 
-            // attendanceToolStripMenuItem
-            // 
-            attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
-            attendanceToolStripMenuItem.Size = new Size(184, 26);
-            attendanceToolStripMenuItem.Text = "Attendance";
-            // 
-            // payrollToolStripMenuItem
-            // 
-            payrollToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollToolStripMenuItem1, payslipGeneratorToolStripMenuItem });
-            payrollToolStripMenuItem.Name = "payrollToolStripMenuItem";
-            payrollToolStripMenuItem.Size = new Size(184, 26);
-            payrollToolStripMenuItem.Text = "Salary";
-            payrollToolStripMenuItem.Click += payrollToolStripMenuItem_Click;
-            // 
-            // payrollToolStripMenuItem1
-            // 
-            payrollToolStripMenuItem1.Name = "payrollToolStripMenuItem1";
-            payrollToolStripMenuItem1.Size = new Size(207, 26);
-            payrollToolStripMenuItem1.Text = "Payroll";
-            // 
-            // payslipGeneratorToolStripMenuItem
-            // 
-            payslipGeneratorToolStripMenuItem.Name = "payslipGeneratorToolStripMenuItem";
-            payslipGeneratorToolStripMenuItem.Size = new Size(207, 26);
-            payslipGeneratorToolStripMenuItem.Text = "Payslip Generator";
-            // 
-            // bookingToolStripMenuItem
-            // 
-            bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            bookingToolStripMenuItem.Size = new Size(184, 26);
-            bookingToolStripMenuItem.Text = "Booking";
-            // 
-            // vichicleToolStripMenuItem
-            // 
-            vichicleToolStripMenuItem.Name = "vichicleToolStripMenuItem";
-            vichicleToolStripMenuItem.Size = new Size(184, 26);
-            vichicleToolStripMenuItem.Text = "Available";
-            vichicleToolStripMenuItem.Click += vichicleToolStripMenuItem_Click;
-            // 
-            // reportsToolStripMenuItem
-            // 
-            reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { payrollSummariesToolStripMenuItem, monthlyIncomeToolStripMenuItem, employeeAttendanceToolStripMenuItem, driverVehicleLogsToolStripMenuItem, printableReportsToolStripMenuItem });
-            reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            reportsToolStripMenuItem.Size = new Size(184, 26);
-            reportsToolStripMenuItem.Text = "Reports";
-            // 
-            // payrollSummariesToolStripMenuItem
-            // 
-            payrollSummariesToolStripMenuItem.Name = "payrollSummariesToolStripMenuItem";
-            payrollSummariesToolStripMenuItem.Size = new Size(238, 26);
-            payrollSummariesToolStripMenuItem.Text = "Payroll Summaries";
-            // 
-            // monthlyIncomeToolStripMenuItem
-            // 
-            monthlyIncomeToolStripMenuItem.Name = "monthlyIncomeToolStripMenuItem";
-            monthlyIncomeToolStripMenuItem.Size = new Size(238, 26);
-            monthlyIncomeToolStripMenuItem.Text = "Monthly Income";
-            // 
-            // employeeAttendanceToolStripMenuItem
-            // 
-            employeeAttendanceToolStripMenuItem.Name = "employeeAttendanceToolStripMenuItem";
-            employeeAttendanceToolStripMenuItem.Size = new Size(238, 26);
-            employeeAttendanceToolStripMenuItem.Text = "Employee Attendance";
-            // 
-            // driverVehicleLogsToolStripMenuItem
-            // 
-            driverVehicleLogsToolStripMenuItem.Name = "driverVehicleLogsToolStripMenuItem";
-            driverVehicleLogsToolStripMenuItem.Size = new Size(238, 26);
-            driverVehicleLogsToolStripMenuItem.Text = "Driver/Vehicle logs";
-            // 
-            // printableReportsToolStripMenuItem
-            // 
-            printableReportsToolStripMenuItem.Name = "printableReportsToolStripMenuItem";
-            printableReportsToolStripMenuItem.Size = new Size(238, 26);
-            printableReportsToolStripMenuItem.Text = "Printable reports";
-            // 
-            // logoutToolStripMenuItem
-            // 
-            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(184, 26);
-            logoutToolStripMenuItem.Text = "Logout";
-            // 
-            // fileToolStripMenuItem
-            // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator, saveToolStripMenuItem, saveAsToolStripMenuItem, toolStripSeparator1, printToolStripMenuItem, printPreviewToolStripMenuItem, toolStripSeparator2, exitToolStripMenuItem });
-            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(46, 24);
-            fileToolStripMenuItem.Text = "&File";
-            // 
-            // newToolStripMenuItem
-            // 
-            newToolStripMenuItem.Image = (Image)resources.GetObject("newToolStripMenuItem.Image");
-            newToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            newToolStripMenuItem.Size = new Size(181, 26);
-            newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            openToolStripMenuItem.Image = (Image)resources.GetObject("openToolStripMenuItem.Image");
-            openToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;
-            openToolStripMenuItem.Size = new Size(181, 26);
-            openToolStripMenuItem.Text = "&Open";
-            // 
-            // toolStripSeparator
-            // 
-            toolStripSeparator.Name = "toolStripSeparator";
-            toolStripSeparator.Size = new Size(178, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            saveToolStripMenuItem.Image = (Image)resources.GetObject("saveToolStripMenuItem.Image");
-            saveToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
-            saveToolStripMenuItem.Size = new Size(181, 26);
-            saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            saveAsToolStripMenuItem.Size = new Size(181, 26);
-            saveAsToolStripMenuItem.Text = "Save &As";
-            // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(178, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            printToolStripMenuItem.Image = (Image)resources.GetObject("printToolStripMenuItem.Image");
-            printToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            printToolStripMenuItem.Name = "printToolStripMenuItem";
-            printToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.P;
-            printToolStripMenuItem.Size = new Size(181, 26);
-            printToolStripMenuItem.Text = "&Print";
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            printPreviewToolStripMenuItem.Image = (Image)resources.GetObject("printPreviewToolStripMenuItem.Image");
-            printPreviewToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            printPreviewToolStripMenuItem.Size = new Size(181, 26);
-            printPreviewToolStripMenuItem.Text = "Print Pre&view";
-            // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(178, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(181, 26);
-            exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // editToolStripMenuItem
-            // 
-            editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem, redoToolStripMenuItem, toolStripSeparator3, cutToolStripMenuItem, copyToolStripMenuItem, pasteToolStripMenuItem, toolStripSeparator4, selectAllToolStripMenuItem });
-            editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(49, 24);
-            editToolStripMenuItem.Text = "&Edit";
-            // 
-            // undoToolStripMenuItem
-            // 
-            undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
-            undoToolStripMenuItem.Size = new Size(179, 26);
-            undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            redoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Y;
-            redoToolStripMenuItem.Size = new Size(179, 26);
-            redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(176, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            cutToolStripMenuItem.Image = (Image)resources.GetObject("cutToolStripMenuItem.Image");
-            cutToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            cutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.X;
-            cutToolStripMenuItem.Size = new Size(179, 26);
-            cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            copyToolStripMenuItem.Image = (Image)resources.GetObject("copyToolStripMenuItem.Image");
-            copyToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            copyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
-            copyToolStripMenuItem.Size = new Size(179, 26);
-            copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            pasteToolStripMenuItem.Image = (Image)resources.GetObject("pasteToolStripMenuItem.Image");
-            pasteToolStripMenuItem.ImageTransparentColor = Color.Magenta;
-            pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            pasteToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.V;
-            pasteToolStripMenuItem.Size = new Size(179, 26);
-            pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // toolStripSeparator4
-            // 
-            toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(176, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            selectAllToolStripMenuItem.Size = new Size(179, 26);
-            selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { customizeToolStripMenuItem, optionsToolStripMenuItem });
-            toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            toolsToolStripMenuItem.Size = new Size(58, 24);
-            toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // customizeToolStripMenuItem
-            // 
-            customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            customizeToolStripMenuItem.Size = new Size(161, 26);
-            customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            optionsToolStripMenuItem.Size = new Size(161, 26);
-            optionsToolStripMenuItem.Text = "&Options";
-            // 
-            // helpToolStripMenuItem
-            // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { contentsToolStripMenuItem, indexToolStripMenuItem, searchToolStripMenuItem, toolStripSeparator5, aboutToolStripMenuItem });
-            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(55, 24);
-            helpToolStripMenuItem.Text = "&Help";
-            // 
-            // contentsToolStripMenuItem
-            // 
-            contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            contentsToolStripMenuItem.Size = new Size(150, 26);
-            contentsToolStripMenuItem.Text = "&Contents";
-            // 
-            // indexToolStripMenuItem
-            // 
-            indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            indexToolStripMenuItem.Size = new Size(150, 26);
-            indexToolStripMenuItem.Text = "&Index";
-            // 
-            // searchToolStripMenuItem
-            // 
-            searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            searchToolStripMenuItem.Size = new Size(150, 26);
-            searchToolStripMenuItem.Text = "&Search";
-            // 
-            // toolStripSeparator5
-            // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(147, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(150, 26);
-            aboutToolStripMenuItem.Text = "&About...";
+            // panel1
+            // 
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(pictureBox10);
+            panel1.Controls.Add(panel10);
+            panel1.Controls.Add(panel9);
+            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(panel7);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 900);
+            panel1.TabIndex = 3;
+            panel1.Paint += panel1_Paint;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackgroundImage = Properties.Resources.d879b042_9903_4ae7_b02b_cd5c3f2a037a_removebg_preview;
+            pictureBox10.Location = new Point(0, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(250, 138);
+            pictureBox10.TabIndex = 10;
+            pictureBox10.TabStop = false;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.Transparent;
+            panel10.Controls.Add(pictureBox9);
+            panel10.Controls.Add(label9);
+            panel10.Location = new Point(0, 524);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(253, 55);
+            panel10.TabIndex = 9;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Transparent;
+            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
+            pictureBox9.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox9.Location = new Point(12, 0);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(79, 52);
+            pictureBox9.TabIndex = 6;
+            pictureBox9.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 15F);
+            label9.ForeColor = SystemColors.ButtonFace;
+            label9.Location = new Point(87, 9);
+            label9.Name = "label9";
+            label9.Size = new Size(100, 35);
+            label9.TabIndex = 4;
+            label9.Text = "Reports";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.Transparent;
+            panel9.Controls.Add(pictureBox8);
+            panel9.Controls.Add(label8);
+            panel9.Location = new Point(0, 468);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(253, 55);
+            panel9.TabIndex = 8;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
+            pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox8.Location = new Point(12, 0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(79, 52);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 6;
+            pictureBox8.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 15F);
+            label8.ForeColor = SystemColors.ButtonFace;
+            label8.Location = new Point(86, 7);
+            label8.Name = "label8";
+            label8.Size = new Size(139, 35);
+            label8.TabIndex = 4;
+            label8.Text = "Income Tax";
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Transparent;
+            panel8.Controls.Add(pictureBox7);
+            panel8.Controls.Add(label7);
+            panel8.Location = new Point(0, 413);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(253, 55);
+            panel8.TabIndex = 7;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox7.Location = new Point(12, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(79, 52);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 6;
+            pictureBox7.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 15F);
+            label7.ForeColor = SystemColors.ButtonFace;
+            label7.Location = new Point(88, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(94, 35);
+            label7.TabIndex = 4;
+            label7.Text = "Graphs";
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.DarkCyan;
+            panel7.Controls.Add(pictureBox2);
+            panel7.Controls.Add(label3);
+            panel7.Location = new Point(0, 137);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(253, 55);
+            panel7.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(12, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(79, 52);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15F);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(86, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(124, 35);
+            label3.TabIndex = 0;
+            label3.Text = "Dasboard";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Teal;
+            panel6.Controls.Add(pictureBox3);
+            panel6.Controls.Add(emloyeeL);
+            panel6.Location = new Point(0, 191);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(253, 55);
+            panel6.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox3.Location = new Point(12, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(79, 52);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // emloyeeL
+            // 
+            emloyeeL.AutoSize = true;
+            emloyeeL.Font = new Font("Segoe UI", 15F);
+            emloyeeL.ForeColor = SystemColors.ButtonFace;
+            emloyeeL.Location = new Point(86, 10);
+            emloyeeL.Name = "emloyeeL";
+            emloyeeL.Size = new Size(124, 35);
+            emloyeeL.TabIndex = 1;
+            emloyeeL.Text = "Employee";
+            emloyeeL.Click += label4_Click;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(pictureBox4);
+            panel5.Controls.Add(label2);
+            panel5.Location = new Point(0, 248);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(253, 55);
+            panel5.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox4.Location = new Point(12, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(79, 52);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 4;
+            pictureBox4.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(87, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(81, 35);
+            label2.TabIndex = 2;
+            label2.Text = "Status";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(pictureBox5);
+            panel4.Controls.Add(label5);
+            panel4.Location = new Point(0, 303);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(253, 55);
+            panel4.TabIndex = 2;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
+            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox5.Location = new Point(12, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(79, 52);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 5;
+            pictureBox5.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15F);
+            label5.ForeColor = SystemColors.ButtonFace;
+            label5.Location = new Point(86, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(82, 35);
+            label5.TabIndex = 3;
+            label5.Text = "Billing";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Transparent;
+            panel3.Controls.Add(pictureBox6);
+            panel3.Controls.Add(label6);
+            panel3.Location = new Point(0, 359);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(253, 55);
+            panel3.TabIndex = 1;
+            panel3.Paint += panel3_Paint;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
+            pictureBox6.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox6.Location = new Point(12, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(79, 52);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 6;
+            pictureBox6.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 15F);
+            label6.ForeColor = SystemColors.ButtonFace;
+            label6.Location = new Point(86, 8);
+            label6.Name = "label6";
+            label6.Size = new Size(89, 35);
+            label6.TabIndex = 4;
+            label6.Text = "Payroll";
+            label6.Click += label6_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.LightSeaGreen;
+            panel2.Controls.Add(logoutL);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(0, 849);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 49);
+            panel2.TabIndex = 0;
+            // 
+            // logoutL
+            // 
+            logoutL.AutoSize = true;
+            logoutL.Font = new Font("Segoe UI", 15F);
+            logoutL.ForeColor = SystemColors.ButtonFace;
+            logoutL.Location = new Point(97, 5);
+            logoutL.Name = "logoutL";
+            logoutL.Size = new Size(94, 35);
+            logoutL.TabIndex = 0;
+            logoutL.Text = "Logout";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(12, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(79, 49);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
@@ -398,71 +413,80 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1352, 531);
-            Controls.Add(menuStrip1);
+            ClientSize = new Size(1600, 900);
+            Controls.Add(panel1);
             Cursor = Cursors.Hand;
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MainMenuStrip = menuStrip1;
             Name = "Dashboard";
             RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Minimized;
             Load += Dashboard_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem dashboardToolStripMenuItem;
-        private ToolStripMenuItem employeeListToolStripMenuItem;
-        private ToolStripMenuItem payrollToolStripMenuItem;
-        private ToolStripMenuItem vichicleToolStripMenuItem;
-        private ToolStripMenuItem dashboardToolStripMenuItem1;
-        private ToolStripMenuItem reportsToolStripMenuItem;
-        private ToolStripMenuItem attendanceToolStripMenuItem;
-        private ToolStripMenuItem payrollToolStripMenuItem1;
-        private ToolStripMenuItem payslipGeneratorToolStripMenuItem;
-        private ToolStripMenuItem logoutToolStripMenuItem;
-        private ToolStripMenuItem payrollSummariesToolStripMenuItem;
-        private ToolStripMenuItem monthlyIncomeToolStripMenuItem;
-        private ToolStripMenuItem employeeAttendanceToolStripMenuItem;
-        private ToolStripMenuItem driverVehicleLogsToolStripMenuItem;
-        private ToolStripMenuItem printableReportsToolStripMenuItem;
-        private ToolStripMenuItem bookingToolStripMenuItem;
-        private ToolStripMenuItem fileToolStripMenuItem;
-        private ToolStripMenuItem newToolStripMenuItem;
-        private ToolStripMenuItem openToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator;
-        private ToolStripMenuItem saveToolStripMenuItem;
-        private ToolStripMenuItem saveAsToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem printToolStripMenuItem;
-        private ToolStripMenuItem printPreviewToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator2;
-        private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem editToolStripMenuItem;
-        private ToolStripMenuItem undoToolStripMenuItem;
-        private ToolStripMenuItem redoToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator3;
-        private ToolStripMenuItem cutToolStripMenuItem;
-        private ToolStripMenuItem copyToolStripMenuItem;
-        private ToolStripMenuItem pasteToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator4;
-        private ToolStripMenuItem selectAllToolStripMenuItem;
-        private ToolStripMenuItem toolsToolStripMenuItem;
-        private ToolStripMenuItem customizeToolStripMenuItem;
-        private ToolStripMenuItem optionsToolStripMenuItem;
-        private ToolStripMenuItem helpToolStripMenuItem;
-        private ToolStripMenuItem contentsToolStripMenuItem;
-        private ToolStripMenuItem indexToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator5;
-        private ToolStripMenuItem aboutToolStripMenuItem;
+        private Panel panel1;
+        private Panel panel6;
+        private PictureBox pictureBox3;
+        private Label emloyeeL;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel3;
+        private Panel panel2;
+        private Label logoutL;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
+        private Label label2;
+        private PictureBox pictureBox5;
+        private Label label5;
+        private PictureBox pictureBox6;
+        private Label label6;
+        private Panel panel7;
+        private PictureBox pictureBox2;
+        private Label label3;
+        private Panel panel9;
+        private PictureBox pictureBox8;
+        private Label label8;
+        private Panel panel8;
+        private PictureBox pictureBox7;
+        private Label label7;
+        private Panel panel10;
+        private PictureBox pictureBox9;
+        private Label label9;
+        private PictureBox pictureBox10;
     }
 }
