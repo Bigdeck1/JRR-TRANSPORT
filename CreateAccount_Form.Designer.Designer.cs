@@ -21,9 +21,13 @@
             C_user_name = new TextBox();
             C_pass_word = new TextBox();
             C_acc_btn = new Button();
-            L_acc_link = new LinkLabel();
             label4 = new Label();
             xlink = new Label();
+            l_btn = new Button();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // C_username
@@ -37,6 +41,7 @@
             resources.ApplyResources(C_password, "C_password");
             C_password.BackColor = Color.Transparent;
             C_password.Name = "C_password";
+            C_password.Click += C_password_Click;
             // 
             // label3
             // 
@@ -62,14 +67,6 @@
             C_acc_btn.Name = "C_acc_btn";
             C_acc_btn.UseVisualStyleBackColor = false;
             // 
-            // L_acc_link
-            // 
-            resources.ApplyResources(L_acc_link, "L_acc_link");
-            L_acc_link.BackColor = Color.Transparent;
-            L_acc_link.LinkColor = Color.Red;
-            L_acc_link.Name = "L_acc_link";
-            L_acc_link.TabStop = true;
-            // 
             // label4
             // 
             resources.ApplyResources(label4, "label4");
@@ -84,14 +81,36 @@
             xlink.ForeColor = Color.Red;
             xlink.Name = "xlink";
             // 
+            // l_btn
+            // 
+            l_btn.BackColor = Color.DeepSkyBlue;
+            resources.ApplyResources(l_btn, "l_btn");
+            l_btn.ForeColor = SystemColors.ControlText;
+            l_btn.Name = "l_btn";
+            l_btn.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(l_btn);
+            panel1.Name = "panel1";
+            // 
             // CreateAccount_Form
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(224, 224, 224);
+            BackColor = Color.White;
+            Controls.Add(panel1);
             Controls.Add(xlink);
             Controls.Add(label4);
-            Controls.Add(L_acc_link);
             Controls.Add(C_acc_btn);
             Controls.Add(C_pass_word);
             Controls.Add(C_user_name);
@@ -102,6 +121,8 @@
             ForeColor = SystemColors.ActiveCaptionText;
             FormBorderStyle = FormBorderStyle.None;
             Name = "CreateAccount_Form";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -114,8 +135,10 @@
         private TextBox C_user_name;
         private TextBox C_pass_word;
         private Button C_acc_btn;
-        private LinkLabel L_acc_link;
         private Label label4;
         private Label xlink;
+        private Button l_btn;
+        private PictureBox pictureBox1;
+        private Panel panel1;
     }
 }

@@ -17,7 +17,7 @@ namespace Jrr_Transport_Management_System
             CreateDatabaseIfNotExist();
 
             C_acc_btn.Click += C_acc_btn_Click;
-            L_acc_link.Click += L_acc_link_Click;
+            l_btn.Click += l_btn_Click;
             xlink.Click += xlink_Click;
         }
 
@@ -116,13 +116,23 @@ namespace Jrr_Transport_Management_System
             }
         }
 
-        private void L_acc_link_Click(object sender, EventArgs e)
+        private void l_btn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void xlink_Click(object? sender, EventArgs e)
+        private void xlink_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void C_password_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Jrr_Transport_Management_System
             InitializeComponent();
             EnsureDatabase();
             login_Btn.Click += login_Btn_Click;
-            acc_Create.Click += acc_Create_Click;
+            c_acc_btn.Click += c_acc_btn_Click;
             xlink.Click += xlink_Click;
         }
 
@@ -117,5 +117,18 @@ namespace Jrr_Transport_Management_System
         {
             this.Close();
         }
-}
+        private void c_acc_btn_Click(object? sender, EventArgs e)
+        {
+            this.Hide();
+            CreateAccount_Form createForm = new CreateAccount_Form();
+
+            createForm.FormClosed += (s, args) => this.Show();
+            createForm.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
