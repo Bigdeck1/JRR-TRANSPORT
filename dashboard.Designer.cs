@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
-            pictureBox10 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            emp_btn = new Button();
+            pictureBox13 = new PictureBox();
+            dasb_btn = new Button();
             panel10 = new Panel();
             pictureBox9 = new PictureBox();
             label9 = new Label();
@@ -40,15 +44,9 @@
             panel8 = new Panel();
             pictureBox7 = new PictureBox();
             label7 = new Label();
-            panel7 = new Panel();
-            pictureBox2 = new PictureBox();
-            label3 = new Label();
-            panel6 = new Panel();
-            pictureBox3 = new PictureBox();
-            emloyeeL = new Label();
             panel5 = new Panel();
             pictureBox4 = new PictureBox();
-            label2 = new Label();
+            label1 = new Label();
             panel4 = new Panel();
             pictureBox5 = new PictureBox();
             label5 = new Label();
@@ -58,18 +56,22 @@
             panel2 = new Panel();
             logoutL = new Label();
             pictureBox1 = new PictureBox();
+            panel6 = new Panel();
+            employeePanel = new Panel();
+            labelTotalEmployees = new Label();
+            label2 = new Label();
+            employee_number = new Label();
+            guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
+            lblTotalEmployees = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel4.SuspendLayout();
@@ -78,17 +80,20 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel6.SuspendLayout();
+            employeePanel.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(pictureBox10);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(emp_btn);
+            panel1.Controls.Add(pictureBox13);
+            panel1.Controls.Add(dasb_btn);
             panel1.Controls.Add(panel10);
             panel1.Controls.Add(panel9);
             panel1.Controls.Add(panel8);
-            panel1.Controls.Add(panel7);
-            panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
@@ -97,24 +102,64 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 900);
-            panel1.TabIndex = 3;
-            panel1.Paint += panel1_Paint;
+            panel1.TabIndex = 6;
             // 
-            // pictureBox10
+            // pictureBox2
             // 
-            pictureBox10.BackgroundImage = Properties.Resources.d879b042_9903_4ae7_b02b_cd5c3f2a037a_removebg_preview;
-            pictureBox10.Location = new Point(0, 0);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(250, 138);
-            pictureBox10.TabIndex = 10;
-            pictureBox10.TabStop = false;
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(6, 62);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(49, 37);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 14;
+            pictureBox2.TabStop = false;
+            // 
+            // emp_btn
+            // 
+            emp_btn.BackColor = Color.Teal;
+            emp_btn.FlatStyle = FlatStyle.Flat;
+            emp_btn.Font = new Font("Segoe UI", 15F);
+            emp_btn.ForeColor = Color.AliceBlue;
+            emp_btn.Location = new Point(0, 52);
+            emp_btn.Name = "emp_btn";
+            emp_btn.Size = new Size(253, 55);
+            emp_btn.TabIndex = 13;
+            emp_btn.Text = "Employee ";
+            emp_btn.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.BackgroundImage = (Image)resources.GetObject("pictureBox13.BackgroundImage");
+            pictureBox13.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox13.Location = new Point(5, 5);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 43);
+            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox13.TabIndex = 12;
+            pictureBox13.TabStop = false;
+            // 
+            // dasb_btn
+            // 
+            dasb_btn.BackColor = Color.Teal;
+            dasb_btn.FlatStyle = FlatStyle.Flat;
+            dasb_btn.Font = new Font("Segoe UI", 15F);
+            dasb_btn.ForeColor = Color.AliceBlue;
+            dasb_btn.Location = new Point(0, -1);
+            dasb_btn.Name = "dasb_btn";
+            dasb_btn.Size = new Size(253, 55);
+            dasb_btn.TabIndex = 11;
+            dasb_btn.Text = "Dashboard";
+            dasb_btn.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
             panel10.BackColor = Color.Transparent;
             panel10.Controls.Add(pictureBox9);
             panel10.Controls.Add(label9);
-            panel10.Location = new Point(0, 524);
+            panel10.Location = new Point(0, 389);
             panel10.Name = "panel10";
             panel10.Size = new Size(253, 55);
             panel10.TabIndex = 9;
@@ -146,7 +191,7 @@
             panel9.BackColor = Color.Transparent;
             panel9.Controls.Add(pictureBox8);
             panel9.Controls.Add(label8);
-            panel9.Location = new Point(0, 468);
+            panel9.Location = new Point(0, 333);
             panel9.Name = "panel9";
             panel9.Size = new Size(253, 55);
             panel9.TabIndex = 8;
@@ -179,7 +224,7 @@
             panel8.BackColor = Color.Transparent;
             panel8.Controls.Add(pictureBox7);
             panel8.Controls.Add(label7);
-            panel8.Location = new Point(0, 413);
+            panel8.Location = new Point(0, 278);
             panel8.Name = "panel8";
             panel8.Size = new Size(253, 55);
             panel8.TabIndex = 7;
@@ -207,79 +252,12 @@
             label7.TabIndex = 4;
             label7.Text = "Graphs";
             // 
-            // panel7
-            // 
-            panel7.BackColor = Color.DarkCyan;
-            panel7.Controls.Add(pictureBox2);
-            panel7.Controls.Add(label3);
-            panel7.Location = new Point(0, 137);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(253, 55);
-            panel7.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(12, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(79, 52);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15F);
-            label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(86, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(124, 35);
-            label3.TabIndex = 0;
-            label3.Text = "Dasboard";
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.Teal;
-            panel6.Controls.Add(pictureBox3);
-            panel6.Controls.Add(emloyeeL);
-            panel6.Location = new Point(0, 191);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(253, 55);
-            panel6.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(12, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(79, 52);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            // 
-            // emloyeeL
-            // 
-            emloyeeL.AutoSize = true;
-            emloyeeL.Font = new Font("Segoe UI", 15F);
-            emloyeeL.ForeColor = SystemColors.ButtonFace;
-            emloyeeL.Location = new Point(86, 10);
-            emloyeeL.Name = "emloyeeL";
-            emloyeeL.Size = new Size(124, 35);
-            emloyeeL.TabIndex = 1;
-            emloyeeL.Text = "Employee";
-            emloyeeL.Click += label4_Click;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.Transparent;
             panel5.Controls.Add(pictureBox4);
-            panel5.Controls.Add(label2);
-            panel5.Location = new Point(0, 248);
+            panel5.Controls.Add(label1);
+            panel5.Location = new Point(0, 113);
             panel5.Name = "panel5";
             panel5.Size = new Size(253, 55);
             panel5.TabIndex = 3;
@@ -296,23 +274,23 @@
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
             // 
-            // label2
+            // label1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(87, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 35);
-            label2.TabIndex = 2;
-            label2.Text = "Status";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(87, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(81, 35);
+            label1.TabIndex = 2;
+            label1.Text = "Status";
             // 
             // panel4
             // 
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(pictureBox5);
             panel4.Controls.Add(label5);
-            panel4.Location = new Point(0, 303);
+            panel4.Location = new Point(0, 168);
             panel4.Name = "panel4";
             panel4.Size = new Size(253, 55);
             panel4.TabIndex = 2;
@@ -345,11 +323,10 @@
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(pictureBox6);
             panel3.Controls.Add(label6);
-            panel3.Location = new Point(0, 359);
+            panel3.Location = new Point(0, 224);
             panel3.Name = "panel3";
             panel3.Size = new Size(253, 55);
             panel3.TabIndex = 1;
-            panel3.Paint += panel3_Paint;
             // 
             // pictureBox6
             // 
@@ -373,7 +350,6 @@
             label6.Size = new Size(89, 35);
             label6.TabIndex = 4;
             label6.Text = "Payroll";
-            label6.Click += label6_Click;
             // 
             // panel2
             // 
@@ -407,14 +383,75 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Gainsboro;
+            panel6.Controls.Add(employeePanel);
+            panel6.Location = new Point(247, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(1254, 900);
+            panel6.TabIndex = 7;
+            // 
+            // employeePanel
+            // 
+            employeePanel.BackColor = Color.White;
+            employeePanel.BorderStyle = BorderStyle.FixedSingle;
+            employeePanel.Controls.Add(labelTotalEmployees);
+            employeePanel.Controls.Add(label2);
+            employeePanel.Controls.Add(employee_number);
+            employeePanel.Location = new Point(24, 16);
+            employeePanel.Name = "employeePanel";
+            employeePanel.Size = new Size(209, 115);
+            employeePanel.TabIndex = 0;
+            // 
+            // labelTotalEmployees
+            // 
+            labelTotalEmployees.AutoSize = true;
+            labelTotalEmployees.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            labelTotalEmployees.Location = new Point(38, 57);
+            labelTotalEmployees.Name = "labelTotalEmployees";
+            labelTotalEmployees.Size = new Size(0, 35);
+            labelTotalEmployees.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(74, 65);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 1;
+            // 
+            // employee_number
+            // 
+            employee_number.AutoSize = true;
+            employee_number.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            employee_number.Location = new Point(3, 4);
+            employee_number.Name = "employee_number";
+            employee_number.Size = new Size(102, 28);
+            employee_number.TabIndex = 0;
+            employee_number.Text = "Employee";
+            // 
+            // lblTotalEmployees
+            // 
+            lblTotalEmployees.BackColor = Color.Transparent;
+            lblTotalEmployees.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblTotalEmployees.Location = new Point(30, 30);
+            lblTotalEmployees.Name = "lblTotalEmployees";
+            lblTotalEmployees.Size = new Size(182, 30);
+            lblTotalEmployees.TabIndex = 8;
+            lblTotalEmployees.Text = "Total Employees: 0";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1600, 900);
+            ClientSize = new Size(1500, 900);
+            Controls.Add(panel6);
             Controls.Add(panel1);
+            Controls.Add(lblTotalEmployees);
             Cursor = Cursors.Hand;
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
@@ -426,7 +463,8 @@
             WindowState = FormWindowState.Minimized;
             Load += Dashboard_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -436,12 +474,6 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -454,39 +486,47 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel6.ResumeLayout(false);
+            employeePanel.ResumeLayout(false);
+            employeePanel.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
+
         }
 
         #endregion
-
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalEmployees;
         private Panel panel1;
-        private Panel panel6;
-        private PictureBox pictureBox3;
-        private Label emloyeeL;
-        private Panel panel5;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel2;
-        private Label logoutL;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox4;
-        private Label label2;
-        private PictureBox pictureBox5;
-        private Label label5;
-        private PictureBox pictureBox6;
-        private Label label6;
-        private Panel panel7;
         private PictureBox pictureBox2;
-        private Label label3;
+        private Button emp_btn;
+        private PictureBox pictureBox13;
+        private Button dasb_btn;
+        private Panel panel10;
+        private PictureBox pictureBox9;
+        private Label label9;
         private Panel panel9;
         private PictureBox pictureBox8;
         private Label label8;
         private Panel panel8;
         private PictureBox pictureBox7;
         private Label label7;
-        private Panel panel10;
-        private PictureBox pictureBox9;
-        private Label label9;
-        private PictureBox pictureBox10;
+        private Panel panel5;
+        private PictureBox pictureBox4;
+        private Label label1;
+        private Panel panel4;
+        private PictureBox pictureBox5;
+        private Label label5;
+        private Panel panel3;
+        private PictureBox pictureBox6;
+        private Label label6;
+        private Panel panel2;
+        private Label logoutL;
+        private PictureBox pictureBox1;
+        private Panel panel6;
+        private Panel employeePanel;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Label employee_number;
+        private Label label2;
+        private Label labelTotalEmployees;
     }
 }

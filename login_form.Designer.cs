@@ -35,10 +35,15 @@ namespace Jrr_Transport_Management_System
             user_name = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            acc_Create = new Label();
             label3 = new Label();
             label4 = new Label();
             xlink = new Label();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            c_acc_btn = new Button();
+            L_acc_link = new LinkLabel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // login_Btn
@@ -73,20 +78,13 @@ namespace Jrr_Transport_Management_System
             label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Name = "label2";
             // 
-            // acc_Create
-            // 
-            resources.ApplyResources(acc_Create, "acc_Create");
-            acc_Create.BackColor = Color.Transparent;
-            acc_Create.FlatStyle = FlatStyle.Flat;
-            acc_Create.ForeColor = Color.Red;
-            acc_Create.Name = "acc_Create";
-            // 
             // label3
             // 
             resources.ApplyResources(label3, "label3");
             label3.BackColor = Color.Transparent;
             label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Name = "label3";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -102,25 +100,58 @@ namespace Jrr_Transport_Management_System
             xlink.ForeColor = Color.Red;
             xlink.Name = "xlink";
             // 
+            // panel1
+            // 
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(c_acc_btn);
+            panel1.Name = "panel1";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
+            // 
+            // c_acc_btn
+            // 
+            c_acc_btn.BackColor = Color.DeepSkyBlue;
+            resources.ApplyResources(c_acc_btn, "c_acc_btn");
+            c_acc_btn.ForeColor = Color.Transparent;
+            c_acc_btn.Name = "c_acc_btn";
+            c_acc_btn.UseVisualStyleBackColor = false;
+            // 
+            // L_acc_link
+            // 
+            resources.ApplyResources(L_acc_link, "L_acc_link");
+            L_acc_link.BackColor = Color.Transparent;
+            L_acc_link.LinkColor = Color.Red;
+            L_acc_link.Name = "L_acc_link";
+            L_acc_link.TabStop = true;
+            // 
             // login_Form
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.BlanchedAlmond;
+            BackColor = Color.White;
+            Controls.Add(L_acc_link);
             Controls.Add(xlink);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(acc_Create);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(user_name);
             Controls.Add(pass_word);
             Controls.Add(login_Btn);
+            Controls.Add(panel1);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveBorder;
             FormBorderStyle = FormBorderStyle.None;
             Name = "login_Form";
             WindowState = FormWindowState.Minimized;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,9 +163,12 @@ namespace Jrr_Transport_Management_System
         private TextBox user_name;
         private Label label1;
         private Label label2;
-        private Label acc_Create;
         private Label label3;
         private Label label4;
         private Label xlink;
+        private Panel panel1;
+        private Button c_acc_btn;
+        private PictureBox pictureBox1;
+        private LinkLabel L_acc_link;
     }
 }
